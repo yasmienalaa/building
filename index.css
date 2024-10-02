@@ -1,0 +1,224 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.icon {
+    width: 200px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 700px;
+    font-size: x-large;
+}
+
+.coll{
+    display: none;
+}
+li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+li:hover {
+    color: #ffc400;
+}
+
+.carousel-inner {
+    height: 750px;
+}
+.title{
+    text-align: center;
+    padding-top: 10%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    font-size: xxx-large;
+    color: white;
+}
+#s2 {
+    display: flex;
+    text-align: center;
+    font-size: x-large;
+    padding: 50px;
+    margin: 20px;
+    background-color: white;
+}
+
+#s3 {
+    display: flex;
+    padding: 50px;
+    gap: 10%;
+    font-size: x-large;
+    background-color: #f8f8f8;
+}
+#bt{
+    margin: 10px 0;
+}
+#bt:hover{
+    background-color: transparent;
+}
+.left img {
+    width: 600px;
+}
+
+#s4 {
+    display: flex;
+    padding: 50px;
+    gap: 10%;
+    font-size: x-large;
+}
+
+.nd img {
+    width: 600px;
+}
+
+#s5 {
+    text-align: center;
+    font-size: larger;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: larger;
+}
+
+.box3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 10%;
+}
+
+h2 {
+    padding-bottom: 30px;
+    font-size: xxx-large;
+}
+
+#s6 {
+    margin-top: 150px;
+    padding: 50px;
+}
+
+.yall {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc400;
+    padding: 20px;
+    font-size: x-large;
+}
+
+#s7 {
+    display: flex;
+    background-color: #262626;
+    padding: 30px;
+    color: white;
+    gap: 10%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    /* Push footer to the bottom */
+}
+
+.footer-content a {
+    color: #00aced;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 800px) {
+    #s2 {
+        flex-direction: column;
+    }
+
+    #s3 {
+        flex-direction: column;
+    }
+
+    #s4 {
+        flex-direction: column;
+    }
+
+    .box3 {
+        display: block;
+    }
+
+    .left img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .nd img {
+        width: 400px;
+        height: 300px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    .carousel-item img {
+        height: 650px;
+    }
+    #s7{
+        flex-wrap: wrap;
+    }
+    ul{
+        display: none;
+    }
+    .coll{
+        display: block;
+    }
+}
+
+#coll {
+    position: relative;
+    transition: 1s;
+}
+
+#coll::after {
+    font-size: x-large;
+    content: 'build';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+    overflow: hidden;
+}
+
+#coll:hover::after {
+    background-color: #26262692;
+    color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+}
